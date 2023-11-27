@@ -10,6 +10,7 @@ body {
 }
 .calculator {
     width: 620px;
+    min-width: 620px;
     height: auto;
     display: flex;
     flex-direction: column;
@@ -41,8 +42,6 @@ li {
     justify-content: center;;
 
 }
-
-
 
 .calculator-button {
     height: 40px;
@@ -85,4 +84,8 @@ li {
 
 .equals {
     background-color: rgb(174, 0, 255);
+}
+
+li:hover {
+    background-color: chartreuse;
 }
