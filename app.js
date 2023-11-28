@@ -24,6 +24,9 @@ calculatorButtons.addEventListener('click', function(e) {
         if (displayCurrent.textContent !== "0") {
             Equals.click();
         }
+        if (displayCurrent.textContent === "0") {
+            return;
+        }
         displayPrevious.textContent = displayCurrent.textContent + " " + e.target.textContent;
         displayCurrent.textContent = '0';
         decimal.classList.add('input');
