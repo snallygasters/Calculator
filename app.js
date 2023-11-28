@@ -37,7 +37,10 @@ allClear.addEventListener('click', function() {
 });
 
 back.addEventListener('click', function(){
-    displayCurrent.textContent = displayCurrent.textContent.slice(0,-1);
+    if (displayCurrent.textContent !== '0') {
+        displayCurrent.textContent = displayCurrent.textContent.slice(0,-1);
+    }
+
 })
 
 Equals.addEventListener('click', function(){
